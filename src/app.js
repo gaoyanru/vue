@@ -1,10 +1,9 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import routerConfig from './router'
-Vue.use(VueRouter)
 
-var router = new VueRouter(routerConfig)
+import router from './router'
+import store from './store'
 
 new Vue({
-  router
+  router,
+  store
 }).$mount('#root')
